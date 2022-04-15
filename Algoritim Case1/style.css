@@ -1,0 +1,585 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 1300px;
+}
+a{
+    text-decoration: none;
+}
+
+/* UPPER NAVBAR */
+.upper-navbar{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+/*left*/
+
+.upper-navbar > .text{
+    color: black;
+}
+.upper-navbar .highlighted{
+    color:#FF6701;
+}
+
+/*dropdown1*/
+
+.dropdown1-content {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    right: 280px;
+    top: -100px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 16px;
+    z-index: 2;
+    transition: 0.3s;
+}
+.dropdown1-content p a:hover {
+    text-decoration: underline;
+    color: #FF6701;
+}
+.dropdown1-content > p{
+    margin-right: 10px;
+}
+.dropdown1-content > p > a{
+    text-decoration: none;
+}
+.dropdown1:hover .dropdown1-content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    top: 0px;
+}
+
+/*dropdown2*/
+
+.dropdown2-content {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    right: 150px;
+    top: -100px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 16px;
+    z-index: 2;
+    transition: 0.3s;
+}
+.dropdown2-content p a:hover {
+    text-decoration: underline;
+    color: #FF6701;
+}
+.dropdown2-content > p{
+    margin-right: 10px;
+}
+.dropdown2-content > p > a{
+    text-decoration: none;
+}
+.dropdown2:hover .dropdown2-content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    top: 0px;
+}
+
+/*right*/
+
+.upper-navbar .right{
+    display: flex;
+    width: auto;
+    justify-content: space-evenly;
+}
+.upper-navbar .right p{
+    font-size: small;
+    font-weight: lighter;
+}
+.right .lang{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.right .currency{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.right .flag-icon{
+    background-image: url("./assets/nav/british_flag.png");
+    background-position: center;
+    background-size: 55px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50%;
+}
+
+/* UPPER NAVBAR END */
+
+/*---------------------------------------------------------------------------------------*/
+
+/* NAVBAR */
+
+.navbar{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.223);
+}
+
+/* brand */
+
+.navbar .brand h1{
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.142);
+    letter-spacing: 0.1em;
+}
+.navbar .brand small{
+    margin-top: -30px;
+    margin-left: 40px;
+    position: absolute;
+    z-index: -10;
+    letter-spacing: 0.1em;
+    color: green;
+}
+
+/* nav items */
+
+.navbar .nav-items ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar .nav-items ul li{
+    margin-right: 30px;
+    
+}
+.navbar .nav-items ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    padding: 5px;
+    color: black;
+}
+
+.navbar .nav-items ul li a:hover{
+    border-bottom: 1px solid #FF6701;
+    transition: 0.3s;
+    background-color: #ff67011b;
+}
+.navbar .nav-items ul li a img{
+    margin-right: 5px;
+}
+
+/* NAVBAR END */
+
+/* ----------------------------------------------------------------*/
+
+/* CATEGORIES */ 
+
+.categories ul{
+    padding-left: 25%;
+    padding-right: 25%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.categories ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+.categories ul li a:hover{
+    background-color: #ff670142;
+    transition: 0.2s;
+}
+
+/* CATEGORIES END */
+
+/* ----------------------------------------------------------------*/
+
+/* BANNER */ 
+
+.banner{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+}
+.banner .banner-text{
+    margin-bottom: 50px;
+}
+.banner .banner-text .banner-head{
+    color: #FF6701;
+}
+.banner .link{
+    float: right;
+    font-weight: bold;
+    color: #FF6701;
+}
+.banner-products{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* BANNER END */ 
+
+/* ----------------------------------------------------------------*/
+
+/* PRODUCTS */
+
+.product{
+    width: 23%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.437);
+    border-radius: 5px;
+    height: 410px;
+    background-color: #ffffff;
+}
+.product .top{
+    padding: 5px;
+}
+.product .top .right{
+    float: right;
+    margin-top: -25px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+.product .top .right small{
+    margin-left: 5px;
+}
+.product .img{
+    background-image: url("./assets/products/apple.jpg");
+    background-position: center;
+    background-size: 200px;
+    background-color: #FF6701;
+    height: 200px;
+    transition: 0.2s;
+}
+.product .img:hover{
+    box-shadow: inset 0 0 50px #FF6701;
+    transition: 0.2s;
+}
+
+.product .footer{
+    padding: 10px;
+}
+.product .footer .text{
+    line-height: 0;
+}
+.product .footer .text h5{
+    display: inline-block;
+    margin: 0px;
+}
+.product .footer .text h3{
+    float: right;
+    margin-top: -30px;
+}
+.product .footer .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product .footer .buttons button{
+    padding: 5px 10px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: 1px solid #FF6701;
+    color: #FF6701;
+    font-size: 1em;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.371);
+
+}
+.product .footer .buttons button:hover{
+    background-color: #FF6701;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.product .footer .buttons button:active{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+
+/* PRODUCTS END */ 
+
+/* ----------------------------------------------------------------*/
+
+/* PARALLAX 1*/
+
+.parallax{
+    background-image: url("./assets/parallax1.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax .overlay{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.parallax .overlay h3{
+    color: white;
+    font-size: 3em;
+}
+
+/* PARALLAX 1 END*/
+
+/* ----------------------------------------------------------------*/
+
+/* PARALLAX 2 */
+
+.parallax2{
+    background-image: url("./assets/parallax2.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax2 .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.parallax2 .overlay h3{
+    color: white;
+    font-size: 3em;
+}
+.parallax2 .overlay p{
+    color: #e5e5e5;
+}
+.parallax2 .overlay .button-group button{
+    padding: 10px 20px;
+    background-color: #FF6701;
+    color: #ffffff;
+    border: 1px solid #FF6701;
+    width: 200px;
+    font-size: 1em;
+    transition: 0.2s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.371);
+}
+.parallax2 .overlay .button-group :first-child{
+    border-radius: 20px 5px 5px 20px;
+}
+.parallax2 .overlay .button-group :last-child{
+    border-radius: 5px 20px 20px 5px;
+    background-color: #ffffff;
+    color: #FF6701;
+}
+.parallax2 .overlay .button-group button:hover{
+    background-color: #FF6701;
+    color: #ffffff;
+    width: 220px;
+    transition: 0.2s;
+}
+.parallax2 .overlay .button-group button:active{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+
+/* PARALLAX 2 END*/
+
+/* ----------------------------------------------------------------*/
+
+/* OVERFLOWN PRODUCTS */
+
+.overflown{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+}
+
+/* OVERFLOWN PRODUCTS END*/
+
+/* ----------------------------------------------------------------*/
+
+/* PARALLAX 3*/
+
+.parallax3{
+    height: 300px;
+    position: relative;
+    background-attachment: fixed;
+    background-color: #3a3a3a;
+    background-image:  radial-gradient(#FF6701 2px, transparent 2px), radial-gradient(#FF6701 2px, #3a3a3a 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+    margin-bottom: 50px;
+}
+.parallax3 .overlay{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.parallax3 .overlay .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parallax3 .vl {
+    border-left: 2px solid #FF6701;
+}
+.parallax3 .overlay .item h1{
+   color: white;
+   font-size: 3em;
+}
+.parallax3 .overlay .item h2{
+    color: white;
+}
+
+/* PARALLAX 3 END*/
+
+/* ----------------------------------------------------------------*/
+
+/* INFO */
+.info-container{
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 150px;
+    
+}
+.info-container .head-text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.info-container .head-text h2{
+    color: #FF6701;
+}
+.info-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    width: 32%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.437);
+    border-radius: 5px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.info .top{
+    padding: 5px;
+}
+
+.info .img{
+    background-image: url("./assets/info.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px;
+    background-color: #FF6701;
+    height: 200px;
+    transition: 0.2s;
+}
+.info .img:hover{
+    box-shadow: inset 0 0 50px #FF6701;
+    transition: 0.2s;
+}
+
+.info .footer{
+    padding: 10px;
+}
+.info .footer p{
+    text-align: justify;
+}
+.info .footer a{
+    color: #FF6701;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* INFO END */
+
+/* ----------------------------------------------------------------*/
+
+/* FOOTER */
+
+.page-footer{
+    background-color: #3a3a3a;
+    height: 400px;
+    position: relative;
+}
+.page-footer .over{
+    position: absolute;
+    background-color: #b1b1b1;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.377);
+}
+.page-footer .over ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.page-footer .over ul li{
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0;
+}
+.page-footer .content{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-footer .content .footer-item{
+    color: white;
+    width: 23%;
+}
+.page-footer .content .footer-item ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: #FF6701;
+}
+.page-footer .content .footer-item a{
+    color: #FF6701;
+    text-decoration: underline;
+}
+.page-footer .content .footer-item button{
+    color: white;
+    padding: 10px 15px;
+    background-color: #FF6701;
+    border: 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.392);
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    
+}
+.page-footer .content .footer-item button:hover{
+    color: #FF6701;
+    background-color: #fff;
+}
